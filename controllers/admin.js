@@ -22,7 +22,7 @@ export const getUser = asyncHandler(async (req, res, next) => {
       new ErrorResponse(`No user found with id of ${req.params.id}`, 404)
     );
   }
-
+// 
   res
     .status(200)
     .json({
